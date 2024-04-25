@@ -17,7 +17,7 @@ import os
 #
 # Path for saving the captured image
 #image_path = '/captured_image.jpg'
-image_path = 'img5.jpeg'
+image_path = 'images/img2.png'
 
 #
 def extract_text(image_path):
