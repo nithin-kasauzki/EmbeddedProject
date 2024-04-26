@@ -6,9 +6,16 @@ pip3 install pytesseract
 pip3 install gtts
 """
 
+import pytesseract
+
+# Set the Tesseract path based on your installation linux
+#pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
+
+pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
+
 
 from time import sleep
-import pytesseract
+
 from PIL import Image
 from gtts import gTTS
 import os
@@ -17,7 +24,7 @@ import os
 #
 # Path for saving the captured image
 #image_path = '/captured_image.jpg'
-image_path = 'images/img2.png'
+image_path = 'images/img3.jpeg'
 
 #
 def extract_text(image_path):
