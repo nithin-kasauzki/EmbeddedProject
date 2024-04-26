@@ -4,6 +4,8 @@ import sys
 from time import sleep
 import logging
 
+import RPi.GPIO as GPIO
+
 import pytesseract
 from gtts import gTTS
 from PIL import Image
