@@ -35,7 +35,7 @@ class DocumentReader:
 
     def run(self):
         #os.mkdir('s0ma', 0o755)
-        image_path = "images/img2.png"  
+        image_path = "images/image.png"  
         text = OCR().extract_text(image_path)
         logging.info("Extracted text: {}".format(text))
 
